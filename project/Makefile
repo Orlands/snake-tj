@@ -1,6 +1,7 @@
 NAME		= Snake
 
 INCLUDE		= ./include/
+
 SOURCE		= ./source/
 
 SOURCE_FILES	= $(SOURCE)BodyElement.cpp \
@@ -9,7 +10,6 @@ SOURCE_FILES	= $(SOURCE)BodyElement.cpp \
 		$(SOURCE)Exception.cpp \
 		$(SOURCE)Food.cpp \
 		$(SOURCE)InputEvent.cpp \
-		$(SOURCE)ItemCrashable.cpp \
 		$(SOURCE)Main.cpp \
 		$(SOURCE)Position.cpp \
 		$(SOURCE)Snake.cpp \
@@ -17,11 +17,11 @@ SOURCE_FILES	= $(SOURCE)BodyElement.cpp \
 
 OBJECT		= $(SOURCE_FILES:.cpp=.o)
 
-CPP_FLAGS	= -W -Wall -Wextra -Werror -I$(INCLUDE)
+CXXFLAGS	+= -W -Wall -Wextra -Werror -ansi -g3 -I$(INCLUDE)
 
 GCC		= g++
 
-RM		= rm -rf
+RM		= rm -rfv
 
 ECHO		= echo -e
 
