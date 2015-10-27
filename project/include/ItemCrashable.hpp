@@ -5,10 +5,10 @@
 
 class ItemCrashable {
 public:
-  virtual Position getCurrentPosition() = 0;
-  virtual void setPosition() = 0;
+  virtual Position *getCurrentPosition() = 0;
+  virtual void setPosition(Position *) = 0;
   virtual bool getState() = 0;
   virtual bool isCollide() = 0;
 };
 
-#endif
+#endif /* ITEMCRASHABLE_HPP_ */

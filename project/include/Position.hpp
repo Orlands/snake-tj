@@ -6,14 +6,16 @@
 class Position
 {
 private:
-  int x;
-  int y;
+  int _x;
+  int _y;
 public:
   Position(int, int);
   virtual ~Position();
+  void setX(int);
+  void setY(int);
   int getX();
   int getY();
   void toString();
 };
 
-#endif
+#endif /* !POSITION_HPP_ */
