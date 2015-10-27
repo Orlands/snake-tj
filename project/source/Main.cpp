@@ -1,6 +1,8 @@
 #include	<string>
 #include	<iostream>
+
 #include "Controller.hpp"
+#include "Exception.hpp"
 
 static bool launch_game(const int size_X, const int size_Y)
 {
@@ -13,12 +15,13 @@ static bool launch_game(const int size_X, const int size_Y)
     }
   catch(std::bad_alloc&)
     {
-      return false;
+      return (false);
     }
   if (game_manager != NULL)
     {
       delete game_manager;
       game_manager = NULL;
+      return (false);
     }
   return (true);
 }
@@ -29,5 +32,6 @@ int		main(int ac, char **av)
   (void)av;
   if (launch_game(10, 20) == false)
     return (-1);
+  throw Exception("Error on launching game ...\n");
   return (0);
 }
