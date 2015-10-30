@@ -3,7 +3,7 @@
 
 enum Direction
   {
-    NONE,
+    EMPTY,
     UP,
     DOWN,
     LEFT,
@@ -20,4 +20,4 @@ enum TypeItem
     FOOD
   };
 
-#endif
+#endif /* !ENUMERATION_HPP_ */

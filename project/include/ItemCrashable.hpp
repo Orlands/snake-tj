@@ -11,4 +11,4 @@ public:
   virtual bool isCollide() = 0;
 };
 
-#endif
+#endif /* ITEMCRASHABLE_HPP_ */

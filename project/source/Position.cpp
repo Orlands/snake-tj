@@ -4,7 +4,6 @@ Position::Position(int xVal, int yVal) : x(xVal), y(yVal)
 {
   (void)xVal;
   (void)yVal;
-  std::cout << "Constructor of position making position(" << x << ";"<< y << ")"<< std::endl;
 }
 
 Position::~Position()

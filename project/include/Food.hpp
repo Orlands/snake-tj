@@ -18,4 +18,4 @@ public:
   virtual bool isCollide();
 };
 
-#endif
+#endif /* FOOD_HPP_ */

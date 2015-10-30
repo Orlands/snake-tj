@@ -16,4 +16,4 @@ public:
   void toString();
 };
 
-#endif
+#endif /* !POSITION_HPP_ */

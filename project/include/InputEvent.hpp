@@ -1,4 +1,4 @@
 #ifndef INPUTEVENT_HPP_
 # define INPUTEVENT_HPP_
 
-#endif
+#endif /* !INPUTEVENT_HPP_ */
