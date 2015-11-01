@@ -1,5 +1,5 @@
-#include	<string>
-#include	<iostream>
+#include <string>
+#include <iostream>
 
 #include "Controller.hpp"
 #include "Exception.hpp"
@@ -26,12 +26,11 @@ static bool launch_game(const int size_X, const int size_Y)
   return (true);
 }
 
-int		main(int ac, char **av)
+int main(int ac, char **av)
 {
   (void)ac;
   (void)av;
-  if (launch_game(10, 20) == false)
-    return (-1);
-  throw Exception("Error on launching game ...\n");
+  if (launch_game(10, 10) == false)
+    throw Exception("Error on launching game ...\n");
   return (0);
 }

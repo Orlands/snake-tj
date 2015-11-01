@@ -1,6 +1,8 @@
 #ifndef MAP_HPP_
 # define MAP_HPP_
 
+#include <map>
+
 #include "Enumeration.hpp"
 #include "Position.hpp"
 #include "ISnake.hpp"
@@ -9,13 +11,13 @@
 class Map
 {
 private:
-  std::vector<Cell> _gameMaps;
-  std::vector<ISnake *> _playerBody;
+  std::map<int, Cell *> _gameMaps;
+  ISnake *_playerBody;
 public:
-  Map();
+  Map(int, int);
   ~Map();
   bool check(Direction);
-  bool checkCell(const Position &);
+  bool checkCell(Position *);
   bool generateFood();
 };
 

@@ -15,6 +15,7 @@ private:
 public:
   Cell();
   ~Cell();
+  Position *getPosition();
   bool checkItem(ISnake**);
   TypeItem getTypeItem(void);
   Position *addItem(void);

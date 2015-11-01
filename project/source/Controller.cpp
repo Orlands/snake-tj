@@ -1,10 +1,12 @@
 #include <iostream>
+
 #include "Controller.hpp"
 
 Controller::Controller(int xVal, int yVal)
 {
   (void)xVal;
   (void)yVal;
+  this->_currentDirection = EMPTY;
 }
 
 Controller::~Controller()
@@ -12,7 +14,8 @@ Controller::~Controller()
 }
 
 bool Controller::makeMap()
-{  
+{
+  this->_map = new Map(10, 10);
   return (true);
 }
 

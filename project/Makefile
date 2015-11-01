@@ -13,6 +13,7 @@ SOURCE_FILES	= $(SOURCE)BodyElement.cpp \
 		$(SOURCE)Main.cpp \
 		$(SOURCE)Position.cpp \
 		$(SOURCE)Snake.cpp \
+		$(SOURCE)Map.cpp \
 		$(SOURCE)WallElement.cpp
 
 OBJECT		= $(SOURCE_FILES:.cpp=.o)

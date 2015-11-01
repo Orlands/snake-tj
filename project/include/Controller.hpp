@@ -3,11 +3,13 @@
 
 #include <iostream>
 
+#include "Map.hpp"
 #include "Enumeration.hpp"
 
 class Controller
 {
 private:
+  Map *_map;
   Direction _currentDirection;
 
   bool makeMap();

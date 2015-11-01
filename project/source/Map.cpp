@@ -1,34 +1,46 @@
 #include "Map.hpp"
 
-Map::Map()
+Map::Map(int xVal, int yVal)
 {
+  for (int y = 0; y <= yVal; y++)
+    for (int x = 0; x <= xVal; x++)
+      {
+	/*
+	Cell *insert_cell = new Cell();
+	this->_gameMaps[y].push_back(insert_cell);
+	*/
+      }
 }
 
 Map::~Map()
 {
 }
 
-bool check(Direction new_direction)
+bool Map::check(Direction new_direction)
 {
   (void)new_direction;
   return (true);
 }
 
-bool checkCell(const Position &new_position)
+bool Map::checkCell(Position *new_position)
 {
-  (void)new_position;
-  new_position->getX();
-  new_position->getY();
-  for (std::vector<Cell>::size_type i = 0; i != v.size(); i++)
-    {
-      this->game_maps[i];
-      ((this->_gameMaps[i]).getPosition())->getX();
-      ((this->_gameMaps[i]).getPosition())->getY();
-    }
+  for (
+       std::map<int, Cell *>::iterator it = this->_gameMaps.begin();
+       it != this->_gameMaps.end();
+       ++it)
+    if (it->first == new_position->getY())
+      {
+	/*
+	if (((it->second)->getPosition)->getX() == new_position->getX())
+	  {
+	    std::cout << "Found" << std::endl;
+	  }
+*/
+      }
   return (true);
 }
 
-bool generateFood()
+bool Map::generateFood()
 {
   return (true);
 }
