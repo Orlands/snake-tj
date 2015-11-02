@@ -3,19 +3,18 @@
 
 #include <iostream>
 #include "ItemCrashable.hpp"
+#include "Snake.hpp"
 
 class Food : public ItemCrashable
 {
 private:
-  bool _state;
   Position *_itemPosition;
 public:
-  Food();
+  Food(int, int);
   virtual ~Food();
   virtual Position *getCurrentPosition();
-  virtual void setPosition(Position *);
-  virtual bool getState();
-  virtual bool isCollide();
+  virtual void setPosition(int, int);
+  virtual bool isCollide(Snake **);
 };
 
 #endif /* FOOD_HPP_ */

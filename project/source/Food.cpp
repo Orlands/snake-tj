@@ -1,10 +1,9 @@
 #include "Food.hpp"
 
-Food::Food()
+Food::Food(int xVal, int yVal)
 {
   std::cout << "Food created" << std::endl;
-  this->_state = true;
-  this->_itemPosition = NULL;
+  this->_itemPosition = new Position(xVal, yVal);
 }
 
 Food::~Food()
@@ -17,20 +16,23 @@ Position *Food::getCurrentPosition()
   return this->_itemPosition;
 }
 
-void Food::setPosition(Position *new_position)
+void Food::setPosition(int xVal, int yVal)
 {
-  if ((new_position->getX() <= 0) || (new_position->getY() <= 0))
+  if ((xVal <= 0) || (yVal <= 0))
     return ;
-  (this->_itemPosition)->setX(new_position->getX());
-  (this->_itemPosition)->setY(new_position->getY());
+  (this->_itemPosition)->setX(xVal);
+  (this->_itemPosition)->setY(yVal);
 }
 
-bool Food::getState()
+bool Food::isCollide(Snake **playerBody)
 {
-  return this->_state;
-}
+  (void)playerBody;
 
-bool Food::isCollide()
-{
-  return (true);
+  BodyElement *tail_snake = NULL;
+  tail_snake = new BodyElement(10, 10);
+
+  (void)tail_snake;
+  //(*playerBody)->add();
+  
+  return (false);
 }

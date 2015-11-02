@@ -7,15 +7,13 @@
 class WallElement : public ItemCrashable
 {
 private:
-  bool _state;
   Position *_itemPosition;
 public:
-  WallElement();
+  WallElement(int, int);
   virtual ~WallElement();
   virtual Position *getCurrentPosition();
-  virtual void setPosition(Position *);
-  virtual bool getState();
-  virtual bool isCollide();
+  virtual void setPosition(int, int);
+  virtual bool isCollide(Snake **);
 };
 
 #endif /* !WALLELEMENT_HPP_ */

@@ -11,7 +11,7 @@ Cell::~Cell()
 {
 }
 
-bool Cell::checkItem(ISnake **player_body)
+bool Cell::checkItem(Snake **player_body)
 {
   if (this->_item != NULL)
     {

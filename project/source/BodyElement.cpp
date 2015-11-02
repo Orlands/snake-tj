@@ -1,7 +1,8 @@
-#include "BodyElement.hpp"
+#include "Snake.hpp"
 
-BodyElement::BodyElement()
+BodyElement::BodyElement(int xVal, int yVal)
 {
+  this->_itemPosition = new Position(xVal, yVal);
 }
 
 BodyElement::~BodyElement()
@@ -28,17 +29,30 @@ bool BodyElement::move()
   return (true);
 }
 
-bool BodyElement::isCollide()
+Position *BodyElement::getCurrentPosition()
 {
-  return (true);
+  return this->_itemPosition;
 }
 
-bool BodyElement::add()
+void BodyElement::setPosition(int xVal, int yVal)
 {
-  return (true);
+  if ((xVal <= 0) || (yVal <= 0))
+    return ;
+  (this->_itemPosition)->setX(xVal);
+  (this->_itemPosition)->setY(yVal);
 }
 
-bool BodyElement::remove()
+int BodyElement::getX()
 {
-  return (true);
+  return (0);
+}
+
+int BodyElement::getY()
+{
+  return (0);
+}
+
+Direction BodyElement::getCurrentDirection()
+{
+  return this->_currentDirection;
 }

@@ -1,10 +1,9 @@
 #include "WallElement.hpp"
 
-WallElement::WallElement()
+WallElement::WallElement(int xVal, int yVal)
 {
   std::cout << "WallElement created" << std::endl;
-  this->_state = true;
-  this->_itemPosition = NULL;
+  this->_itemPosition = new Position(xVal, yVal);
 }
 
 WallElement::~WallElement()
@@ -17,21 +16,16 @@ Position *WallElement::getCurrentPosition()
   return this->_itemPosition;
 }
 
-void WallElement::setPosition(Position *new_position)
+void WallElement::setPosition(int xVal, int yVal)
 {
-
-  if ((new_position->getX() <= 0) || (new_position->getY() <= 0))
+  if ((xVal <= 0) || (yVal <= 0))
     return ;
-  (this->_itemPosition)->setX(new_position->getX());
-  (this->_itemPosition)->setY(new_position->getY());
+  (this->_itemPosition)->setX(xVal);
+  (this->_itemPosition)->setY(yVal);
 }
 
-bool WallElement::getState()
+bool WallElement::isCollide(Snake **playerBody)
 {
-  return this->_state;
-}
-
-bool WallElement::isCollide()
-{
-  return (true);
+  (void)playerBody;
+  return (false);
 }

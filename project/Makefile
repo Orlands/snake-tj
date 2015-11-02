@@ -4,8 +4,7 @@ INCLUDE		= ./include/
 
 SOURCE		= ./source/
 
-SOURCE_FILES	= $(SOURCE)BodyElement.cpp \
-		$(SOURCE)Cell.cpp \
+SOURCE_FILES	= $(SOURCE)Cell.cpp \
 		$(SOURCE)Controller.cpp \
 		$(SOURCE)Exception.cpp \
 		$(SOURCE)Food.cpp \
@@ -14,6 +13,7 @@ SOURCE_FILES	= $(SOURCE)BodyElement.cpp \
 		$(SOURCE)Position.cpp \
 		$(SOURCE)Snake.cpp \
 		$(SOURCE)Map.cpp \
+		$(SOURCE)BodyElement.cpp \
 		$(SOURCE)WallElement.cpp
 
 OBJECT		= $(SOURCE_FILES:.cpp=.o)

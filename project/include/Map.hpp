@@ -12,7 +12,7 @@ class Map
 {
 private:
   std::map<int, Cell *> _gameMaps;
-  ISnake *_playerBody;
+  Snake *_playerBody;
 public:
   Map(int, int);
   ~Map();
