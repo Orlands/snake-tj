@@ -1,5 +1,5 @@
 #ifndef CONTROLLER_HPP_
-# define CONTROLLER_HPP
+# define CONTROLLER_HPP_
 
 #include <iostream>
 
@@ -12,13 +12,13 @@ private:
   Map *_map;
   Direction _currentDirection;
 
-  bool makeMap();
-  bool keyPressed();
-  void gameOver();
+  bool makeMap(int, int);
+  bool keyPressed(void);
+  void gameOver(void);
 public:
   Controller(int, int);
   virtual ~Controller();
-  bool startGame();
+  bool startGame(void);
 };
 
 #endif /* !CONTROLLER_HPP_ */

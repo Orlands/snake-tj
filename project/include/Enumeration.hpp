@@ -10,14 +10,4 @@ enum Direction
     RIGHT
   };
 
-enum TypeItem
-  {
-    NONE,
-    SNAKE_HEAD,
-    SNAKE_BODY,
-    WALL,
-    GROUND,
-    FOOD
-  };
-
 #endif /* !ENUMERATION_HPP_ */

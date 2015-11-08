@@ -4,6 +4,8 @@
 #include <iostream>
 #include "ItemCrashable.hpp"
 #include "Snake.hpp"
+#include "Definer.hpp"
+#include "Exception.hpp"
 
 class Food : public ItemCrashable
 {

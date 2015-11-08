@@ -2,12 +2,13 @@
 
 Position::Position(int xVal, int yVal) : _x(xVal), _y(yVal)
 {
-  (void)xVal;
-  (void)yVal;
+  UNUSED(xVal);
+  UNUSED(yVal);
 }
 
 Position::~Position()
 {
+  std::cout << "Destructor of the class `Position`" << std::endl;
 }
 
 void Position::setX(int xVal)

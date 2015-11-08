@@ -3,6 +3,8 @@
 
 #include <iostream>
 #include "ItemCrashable.hpp"
+#include "Definer.hpp"
+#include "Exception.hpp"
 
 class WallElement : public ItemCrashable
 {
