@@ -14,11 +14,11 @@ private:
 public:
   Snake(int, int);
   virtual ~Snake();
-  virtual Position *getNextPosition();
+  virtual Position *getNextPosition(void);
   virtual Position *check(Direction);
-  virtual bool move();
-  bool checkSelfCollision();
-  bool add();
+  virtual bool move(void);
+  bool checkSelfCollision(void);
+  bool add(void);
   bool remove(int);
 };
 

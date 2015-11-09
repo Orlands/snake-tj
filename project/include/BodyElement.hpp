@@ -11,15 +11,15 @@ private:
 public:
   BodyElement(int, int);
   virtual ~BodyElement();
-  virtual Position *getNextPosition();
+  virtual Position *getNextPosition(void);
   virtual Position *check(Direction);
-  virtual bool move();
-  Position *getPosition();
-  Direction getCurrentDirection();
+  virtual bool move(void);
+  Position *getPosition(void);
+  Direction getCurrentDirection(void);
   void setPosition(int, int);
   void setCurrentDirection(Direction);
-  int getX();
-  int getY();
+  int getX(void);
+  int getY(void);
 };
 
 #endif /* !BODYELEMENT_HPP_ */
