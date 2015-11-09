@@ -5,21 +5,23 @@
 #include "Position.hpp"
 #include "ISnake.hpp"
 #include "ItemCrashable.hpp"
+#include "Food.hpp"
+#include "WallElement.hpp"
 
 class Cell
 {
 private:
-  ItemCrashable *_item;
-  TypeItem _type;
-  Position *_position;
 public:
-  Cell();
-  ~Cell();
-  Position *getPosition();
+  Position *_position;
+  ItemCrashable *_item;
+
+  Cell(int, int);
+  virtual ~Cell();
+  Position *getPosition(void);
   bool checkItem(Snake**);
-  TypeItem getTypeItem(void);
-  Position *addItem(void);
-  bool deleteItem(int);
+  Position *addItem(Food *);
+  Position *addItem(WallElement *);
+  bool deleteItem(void);
 };
 
 #endif /* !CELL_HPP_ */

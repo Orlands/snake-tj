@@ -3,6 +3,8 @@
 
 #include <iostream>
 
+#include "Definer.hpp"
+
 class Position
 {
 private:
@@ -13,9 +15,9 @@ public:
   virtual ~Position();
   void setX(int);
   void setY(int);
-  int getX();
-  int getY();
-  void toString();
+  int getX(void);
+  int getY(void);
+  void toString(void);
 };
 
 #endif /* !POSITION_HPP_ */

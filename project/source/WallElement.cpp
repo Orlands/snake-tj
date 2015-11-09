@@ -2,13 +2,12 @@
 
 WallElement::WallElement(int xVal, int yVal)
 {
-  std::cout << "WallElement created" << std::endl;
   this->_itemPosition = new Position(xVal, yVal);
 }
 
 WallElement::~WallElement()
 {
-  std::cout << "WallElement destroyed" << std::endl;
+  std::cout << "Destructor of the class `Food`" << std::endl;
 }
 
 Position *WallElement::getCurrentPosition()
@@ -26,6 +25,7 @@ void WallElement::setPosition(int xVal, int yVal)
 
 bool WallElement::isCollide(Snake **playerBody)
 {
-  (void)playerBody;
-  return (false);
+  if (((*playerBody)->remove(0)) == false)
+    throw Exception("Error on WallElement ...\n");
+  return (true);
 }

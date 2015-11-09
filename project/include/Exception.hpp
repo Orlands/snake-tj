@@ -1,7 +1,6 @@
 #ifndef EXCEPTION_HPP_
 # define EXCEPTION_HPP_
 
-#include <exception>
 #include <iostream>
 
 class Exception : public std::exception

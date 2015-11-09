@@ -2,13 +2,12 @@
 
 Food::Food(int xVal, int yVal)
 {
-  std::cout << "Food created" << std::endl;
   this->_itemPosition = new Position(xVal, yVal);
 }
 
 Food::~Food()
 {
-  std::cout << "Food destroyed" << std::endl;
+  std::cout << "Destructor of the class `Food`" << std::endl;
 }
 
 Position *Food::getCurrentPosition()
@@ -26,13 +25,7 @@ void Food::setPosition(int xVal, int yVal)
 
 bool Food::isCollide(Snake **playerBody)
 {
-  (void)playerBody;
-
-  BodyElement *tail_snake = NULL;
-  tail_snake = new BodyElement(10, 10);
-
-  (void)tail_snake;
-  //(*playerBody)->add();
-  
-  return (false);
+  if ((*playerBody)->add() == false)
+    throw Exception("Error on Food ...\n");
+  return (true);
 }
