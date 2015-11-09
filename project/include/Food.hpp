@@ -14,7 +14,7 @@ private:
 public:
   Food(int, int);
   virtual ~Food();
-  virtual Position *getCurrentPosition();
+  virtual Position *getCurrentPosition(void);
   virtual void setPosition(int, int);
   virtual bool isCollide(Snake **);
 };

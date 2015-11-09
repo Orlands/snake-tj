@@ -13,7 +13,7 @@ private:
 public:
   WallElement(int, int);
   virtual ~WallElement();
-  virtual Position *getCurrentPosition();
+  virtual Position *getCurrentPosition(void);
   virtual void setPosition(int, int);
   virtual bool isCollide(Snake **);
 };
