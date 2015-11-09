@@ -6,7 +6,7 @@
 
 class ItemCrashable {
 public:
-  virtual Position *getCurrentPosition() = 0;
+  virtual Position *getCurrentPosition(void) = 0;
   virtual void setPosition(int, int) = 0;
   virtual bool isCollide(Snake **) = 0;
 };

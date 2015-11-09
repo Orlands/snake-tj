@@ -10,8 +10,8 @@ private:
 public:
   InputEvent();
   virtual ~InputEvent();
-  Direction getPressedKey();
-  void toString();  
+  Direction getPressedKey(void);
+  void toString(void);  
 };
 
 #endif /* !INPUTEVENT_HPP_ */
