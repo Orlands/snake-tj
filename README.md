@@ -16,3 +16,6 @@ The project can be found in the repository `./project/`.
 
 ## Is this project will be developed?
 It isn't scheduled.
+
+## System requirements
+We developed our project on Ubuntu 14.10
