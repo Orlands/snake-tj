@@ -1,3 +1,7 @@
+/** @file Position.hpp
+*
+*/
+
 #ifndef POSITION_HPP_
 # define POSITION_HPP_
 

@@ -1,3 +1,7 @@
+/** @file Enumeration.hpp
+*
+*/
+
 #ifndef ENUMERATION_HPP_
 # define ENUMERATION_HPP_
 

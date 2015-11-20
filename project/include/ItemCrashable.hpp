@@ -1,3 +1,7 @@
+/** @file ItemCrashable.hpp
+*
+*/
+
 #ifndef ITEMCRASHABLE_HPP_
 # define ITEMCRASHABLE_HPP_
 

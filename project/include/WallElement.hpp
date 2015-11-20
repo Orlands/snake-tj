@@ -1,3 +1,7 @@
+/** @file WallElement.hpp
+*
+*/
+
 #ifndef WALLEMENT_HPP_
 # define WALLELEMENT_HPP_
 

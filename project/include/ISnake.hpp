@@ -1,3 +1,7 @@
+/** @file ISnake.hpp
+*
+*/
+
 #ifndef ISNAKE_HPP_
 # define ISNAKE_HPP_
 

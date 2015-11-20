@@ -1,3 +1,7 @@
+/** @file Map.hpp
+*
+*/
+
 #ifndef MAP_HPP_
 # define MAP_HPP_
 

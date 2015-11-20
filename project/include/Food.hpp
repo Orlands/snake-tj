@@ -1,3 +1,7 @@
+/** @file Food.hpp
+*
+*/
+
 #ifndef FOOD_HPP_
 # define FOOD_HPP_
 
