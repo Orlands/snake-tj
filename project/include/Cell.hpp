@@ -1,3 +1,7 @@
+/** @file Cell.hpp
+*
+*/
+
 #ifndef CELL_HPP_
 # define CELL_HPP_
 

@@ -1,3 +1,7 @@
+/** @file Controller.hpp
+*
+*/
+
 #ifndef CONTROLLER_HPP_
 # define CONTROLLER_HPP_
 

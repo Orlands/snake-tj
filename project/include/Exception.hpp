@@ -1,3 +1,7 @@
+/** @file Exception.hpp
+*
+*/
+
 #ifndef EXCEPTION_HPP_
 # define EXCEPTION_HPP_
 

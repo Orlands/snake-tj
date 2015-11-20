@@ -1,3 +1,7 @@
+/** @file Snake.hpp
+*
+*/
+
 #ifndef SNAKE_HPP_
 # define SNAKE_HPP_
 
